@@ -13,6 +13,7 @@ content="Wireless Consulting Handset Product Management, Wireless consulting pos
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
 
 <script type="text/javascript" src="js/menu.js"></script> 
+<script type="text/javascript" src="js/mi.js" ></script> 
 <link rel="stylesheet" href="css/jquery.megamenu.css" type="text/css" media="screen" />
 <script src="js/jquery.megamenu.js" type="text/javascript"></script>
 
@@ -26,11 +27,7 @@ $(document).ready(function(){
 });
 </script>
 
-<!-- RSS Reader -->
-<script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
-<script src="js/jquery.vticker.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/jquery.zrssfeed.css" type="text/css" media="screen"/>
-<script src="js/mi.js" type="text/javascript"></script>
+
 
 
 <!-- Fonts -->
@@ -65,10 +62,7 @@ $(document).ready(function(){
 		<div id="left">
 		    <a href="index.html" id="link"><img src="images/milogo_white.png" alt="Mobile Impact"/></a>
 		</div>
-		<div id="right">
-		    <!-- RSS News -->
-		    <div id="news""></div>
-		</div>
+
     </div>
     
     <div class="top-menu">
@@ -80,13 +74,11 @@ $(document).ready(function(){
             <div class="menu-list"  id="nav_company">
     
               <ul>
-		  <li><a href="index.html">Home</a></li>
+		          <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About Us</a>
                   </li>
                   <li><a href="team.html">Executive Team</a>
                   </li>
-		  <li><a href="projects.html">Projects</a>
-		  </li>
                   <li><a href="approach.html">Our Approach</a>
                   </li>
               </ul>
@@ -100,15 +92,15 @@ $(document).ready(function(){
             <a href="services.html" id="nav_services">Services and Solutions</a>
             <div class="menu-list" id="nav_services">
               <ul>
-                <li><a href="research.html">Research and Analysis</a>
+                <li><a href="research.html">Strategy, Research and Analysis</a>
                 </li>
-                <li><a href="requirements.html">Requirements Generation</a>
+                <li><a href="requirements.html">Product Definition and Requirements </a>
+                </li>
+                <li><a href="technology.html">Technology and Engineering</a> 
                 </li>
                 <li><a href="implementation.html">Program Implementation</a>
                 </li>
                 <li><a href="support.html">Operations Support</a>
-                </li>
-                <li><a href="technology.html">Technology and Engineering</a> 
                 </li>
               </ul>
             </div>
@@ -120,12 +112,6 @@ $(document).ready(function(){
             <div class="menu-list">
               <ul>
                 <li><a href="resumes.html">Join Our Team</a>
-                </li>
-                <li><a href="positions.html">Available Positions</a>
-                </li>
-                <!--<li><a href="papers.html">Whitepapers</a>
-                </li>-->
-                <li><a href="links.html">Industry Links</a>
                 </li>
                 <li><a href="contact.html">Contact Us</a>
                 </li>
@@ -143,26 +129,12 @@ $(document).ready(function(){
 	<div id="wrap">
 		<div id="content-background">
     	<div id="sidebar">
-        	<p> We are always in need of professionals with wireless experience. </p>
+        	<p>We are always in need of experienced professionals.</p>
 			<ul>
 			    <a href="careers.html"><h3>Careers and Resources</h3></a>
 			    <li><a href="resumes.html">Join Our Team</a></li>
-			    <li><a href="positions.html">Available Positions</a></li>
-			    <!--<li><a href="papers.html">Whitepapers</a></li>-->
-			    <li><a href="links.html">Industry Links</a></li>
 			    <li><a href="contact.html">Contact Us</a></li>
 			</ul>
-					    
-			<div id="float_menu">
-			    <ul>
-				<a href="positions.html"><h3 class="label">Available Positions</h3></a>
-				<li><a href="positions.html#job1">Project & Program Managers</a></li>
-				<li><a href="positions.html#job2">Senior Test Engineer</a></li>
-				<li><a href="positions.html#job3">Senior Systems Engineer</a></li>
-				<li><a href="positions.html#job4">Test Engineer</a></li>
-				<li><a href="positions.html#job5">Product Management</a></li>
-			    </ul>
-			</div>
         </div>
         
         
@@ -170,14 +142,7 @@ $(document).ready(function(){
 		
             <div class="subheader" id="careers_resumes"></div>
             
-              <p> Been thinking about a career change?  Are you skilled in some aspect of the
-	      wireless ecosystem? Do you enjoy working on new projects and learning new
-	      technologies at a fast pace?  Then think about joining the Mobile Impact team.
-	      We are always in need of professionals with wireless experience.  Whether you are
-	      in product development, network engineering, product marketing, program management,
-	      operations, or any other area of the wireless ecosystem, consider sending your resume
-	      to us.  We work on new proposals regularly and match consultants from our bench to
-	      those opportunities first.  </p>
+              <p>Thinking about a career change? Do you enjoy working on new projects and learning new technologies at a fast pace? Then think about joining MI Consultants. We are always seeking professionals with experience in network/IT systems, wireless access, wireless devices and applications, engineering test, deployment, product management, and project management. </p>
               <br />
 
         <div class="resume_form" id="">
@@ -208,11 +173,14 @@ $(document).ready(function(){
 					    <option value="South">South</option>
 					    <option value="Northwest">Northwest</option>
 					</select>
-					<label for="travel" style="margin-top:5px">Willing to travel?</label>
+					<label for="travel" style="margin-top:5px">Amount of time available to travel</label>
 					<select name="travel">
 						<option value=""></option>
-						<option value="Yes">Yes</option>
-						<option value="No">No</option>
+						<option value="0">0%</option>
+						<option value="25">25%</option>
+                        <option value="50">50%</option>
+                        <option value="75">75%</option>
+                        <option value="100">100%</option>
 					</select>
 				</p>
 				
@@ -266,7 +234,7 @@ $(document).ready(function(){
 
 <div class="footer">
 	<p>
-	    <span id="left">&copy; 2014 Mobile Impact, LLC. &nbsp All Rights Reserved.</span>
+	    <span id="left">&copy; 2015 Mobile Impact, LLC. &nbsp All Rights Reserved.</span>
 	    <span id="right">
 		<a href="terms.html">Terms of Use</a> &nbsp|&nbsp
 		<a href="terms.html#privacy">Privacy Policy</a> &nbsp|&nbsp

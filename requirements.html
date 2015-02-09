@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<meta name="title" content="Mobile Impact - Requirements Generation"/>
+<meta name="title" content="Mobile Impact - Product Definition and Requirements "/>
 <meta name="description"
 content="Mobile Impact Wireless Industry Consulting Services: Handset Product Management, Mobile Data Applications, Project Management, Systems Engineering"/>
 <meta name="keywords"
@@ -13,6 +13,7 @@ content="Wireless Consulting Handset Product Management, Mobile Data Application
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
 
 <script type="text/javascript" src="js/menu.js"></script> 
+<script type="text/javascript" src="js/mi.js" ></script> 
 
 <link rel="stylesheet" href="css/nivo-slider.css" type="text/css" media="screen" />
 <script src="js/jquery.nivo.slider.js" type="text/javascript"></script>
@@ -33,18 +34,11 @@ $(window).load(function() {
 </script>
 
 
-<!-- RSS Reader -->
-<script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
-<script src="js/jquery.vticker.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/jquery.zrssfeed.css" type="text/css" media="screen"/>
-<script src="js/mi.js" type="text/javascript"></script>
-
-
 <!-- Fonts -->
 <link href='http://fonts.googleapis.com/css?family=Podkova|Jura:400,500&v2' rel='stylesheet' type='text/css'>
 
 
-<title>Mobile Impact - Requirements Generation</title>
+<title>Mobile Impact - Product Definition and Requirements</title>
 
 
 <!-- Google analytics -->
@@ -68,11 +62,6 @@ $(window).load(function() {
     <div class="header">
 		<div id="left">
 		    <a href="index.html" id="link"><img src="images/milogo_white.png" alt="Mobile Impact"/></a>
-
-		</div>
-		<div id="right">
-		    <!-- RSS News -->
-		    <div id="news""></div>
 		</div>
     </div>
     
@@ -85,17 +74,14 @@ $(window).load(function() {
             <div class="menu-list"  id="nav_company">
     
               <ul>
-		  <li><a href="index.html">Home</a></li>
+		              <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About Us</a>
                   </li>
                   <li><a href="team.html">Executive Team</a>
                   </li>
-		  <li><a href="projects.html">Projects</a>
-		  </li>
                   <li><a href="approach.html">Our Approach</a>
                   </li>
               </ul>
-    
             </div>
           </li>
           
@@ -105,15 +91,15 @@ $(window).load(function() {
             <a href="services.html" id="nav_services">Services and Solutions</a>
             <div class="menu-list" id="nav_services">
               <ul>
-                <li><a href="research.html">Research and Analysis</a>
+                <li><a href="research.html">Strategy, Research and Analysis</a>
                 </li>
-                <li><a href="requirements.html">Requirements Generation</a>
+                <li><a href="requirements.html">Product Definition and Requirements </a>
+                </li>
+                <li><a href="technology.html">Technology and Engineering</a> 
                 </li>
                 <li><a href="implementation.html">Program Implementation</a>
                 </li>
                 <li><a href="support.html">Operations Support</a>
-                </li>
-                <li><a href="technology.html">Technology and Engineering</a> 
                 </li>
               </ul>
             </div>
@@ -125,12 +111,6 @@ $(window).load(function() {
             <div class="menu-list">
               <ul>
                 <li><a href="resumes.html">Join Our Team</a>
-                </li>
-                <li><a href="positions.html">Available Positions</a>
-                </li>
-                <!--<li><a href="papers.html">Whitepapers</a>
-                </li>-->
-                <li><a href="links.html">Industry Links</a>
                 </li>
                 <li><a href="contact.html">Contact Us</a>
                 </li>
@@ -146,13 +126,13 @@ $(window).load(function() {
 	<div id="wrap">
 		<div id="content-background">
     	<div id="sidebar">
-        	<p> We form the link between strategic product/service plans and successful implementation. </p>
+        	<p> We form the link between strategic plans and successful implementation.</p>
         	<ul> <a href="services.html"><h3>Services and Solutions</h3></a>
-                <li><a href="research.html">Research and Analysis</a></li>
-                <li><a href="requirements.html">Requirements Generation</a></li>
-                <li><a href="implementation.html">Program Implementation</a></li>
-                <li><a href="support.html">Operations Support</a></li>
+                <li><a href="research.html">Strategy, Research and Analysis</a></li>
+                <li><a href="requirements.html">Product Definition and Requirements </a></li>
                 <li><a href="technology.html">Technology and Engineering</a></li>
+                <li><a href="implementation.html">Program Implementation</a></li>
+                <li><a href="support.html">Operations Support</a></li>          
             </ul>
         </div>
         
@@ -161,38 +141,102 @@ $(window).load(function() {
 		
             <div class="subheader" id="services_requirements"></div>
             
-              <p>The Mobile Impact team is skilled at generating in-depth descriptions of new
-	      products and services.  We have successfully translated product plans into detailed
-	      product descriptions and implementable product requirements.  Throughout the project,
-	      we collaborate with the client team to extract the fundamental features to create
-	      descriptions and use cases that drive requirements, while maintaining traceability
-	      throughout the process.  These steps form the link between strategic product/service
-	      plans and successful implementation of the solution. We develop requirements at all
-	      levels, as needed by our clients, from market requirements through product
-	      requirements and into engineering functional requirements.</p>
+              <p>The MI Consultants team is skilled at generating in-depth descriptions of new products and services.  We have successfully translated business plans into detailed product descriptions and implementable product and engineering requirements.  </p>
 
+              <p>We collaborate with the client team to create product or service descriptions that are derived from use-cases.  We then use this documentation to drive product requirements, engineering requirements, and test requirements while maintaining traceability throughout the process.  These steps form the link between strategic product/service plans and successful implementation of the solution. </p>
 
-          	<ul>
-		    <li><b>Products and Services Description: </b>Together with our clients, we develop in depth, accurate descriptions
-			of products and services that highlight features and functionality in a format easy to communicate and socialize
-			throughout the organization. These descriptions form the basis for product and service positioning, marketing plans,
-			and executive approval of the project.</li>
-		    <li><b>Use Cases: </b>Fundamental to developing requirements, use cases drive the expected performance of any product
-			or service.  We work with the client to create a complete description of the product or service by documenting
-			 use cases.  We then map the use cases into tangible and implementable requirements.</li>
-		    <li><b>Requirements Generation: </b> Requirements provide a blueprint for the end solution, while not specifically
-			prescribing a given implementation.  From them, Mobile Impact can determine detailed project schedules, resource
-			projections, and costs.  The requirements, also, provide the guidelines for our team to manage the development
-			of the solution, while maintaining clear traceability to the original use cases and requirements. </li>
-		    <li><b>Engineering Design Document (Functional Requirements Generation): </b> Implementation starts with a strong set of requirements and functional requirements form the basis of “how” a solution will be designed.  Whether the product or service is implemented by the client or outsourced, the Mobile Impact team can provide the functional requirements, system architecture, or technical specifications for the product/service, which are then translated into a specific technical design that identifies system impacts, equipment utilization, and detailed functionality.</li>
-		    <li><b>Requirement Management and Traceability: </b> Generating connected and coherent documentation for any new
-			product or service is essential to achieving expectations of the entire organization for any product or service and
-			managing the inevitable trade-offs that arise in the product life cycle.  The Mobile Impact team uses techniques
-			that connect the product description, use cases, requirements, specifications, and engineering design.  This
-			traceability is then used to accurately identify the source requirements and communicate to team members about
-			any adaptations required to support the new product or service. It also serves as the foundation for future
-			product/service evolution by capturing requirements planned for future iterations and upgrades.</li>
-		</ul>
+      <div class="expandable">
+      <h3 class="expandable_header">Content Management</h3>
+      <div class="expandable_sub">  
+          <h5>Where we can help: Your Challenges</h5>
+          <ul>
+            <li>Accessing content is slow and cumbersome.</li>
+            <li>System access is unavailable or unreliable. </li>
+            <li>Incompatibility between devices and systems.</li>
+            <li>Accessed information does not behave or display as expected.</li>
+          </ul>
+
+          <h5>What you can receive from MI Consultants:  Our Deliverables</h5>
+          <ul>
+            <li>Comprehensive analysis and recommendations of system access, traffic models, network sizing, and throughput.</li>
+            <li>User focus group analysis and content driven requirements.</li>
+            <li>Identification of content compatible equipment or software.</li>
+            <li>Device and network configuration definition to enable interactive use.</li>
+            <li>Requirements definition for device access and system interaction.</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="expandable">
+    <h3 class="expandable_header">Product or Service Portfolio Management</h3>
+      <div class="expandable_sub">  
+          <h5>Where we can help: Your Challenges</h5>
+          <ul>
+            <li>Development cycle is misaligned with market opportunities.</li>
+            <li>Products are late to market.</li>
+            <li>Products lack features or aren’t competitive.</li>
+            <li>Competition is unknown or lacks comparative data.</li>
+            <li>Product release schedules and roadmaps are not defined.</li>
+          </ul>
+
+          <h5>What you can receive from MI Consultants:  Our Deliverables</h5>
+          <ul>
+            <li>Objective in depth analysis of the products, services, and features.</li>
+            <li>Product position analysis within the portfolio and against competition.</li>
+            <li>Process evaluation and recommendations to improve development efficiencies.</li>
+            <li>Benchmarking of product costs and features.</li>
+            <li>Alignment of the product roadmap to market segmentation model and development phases.</li>
+            <li>Competitive analysis and benchmarking report.</li>
+            <li>Documented requirements to drive solution implementation.</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="expandable">
+    <h3 class="expandable_header">Requirements Generation and Traceability</h3>
+      <div class="expandable_sub">  
+          <h5>Where we can help: Your Challenges</h5>
+          <ul>
+            <li>Products or services are not fully defined or documented.</li>
+            <li>Product plans are not driven by use-cases based upon end-user needs.</li>
+            <li>The development team gets sidetracked or needs constant attention in meetings to understand the product functionality to be implemented. </li>
+            <li>Requirements are not effectively managed.</li>
+            <li>Formal change control process is deficient.</li>
+            <li>Documentation does not exist to leverage organizational assets and use lessons-learned from previous projects.</li>
+          </ul>
+
+          <h5>What you can receive from MI Consultants:  Our Deliverables</h5>
+          <ul>
+            <li>Clearly defined use-cases or user-story documentation to describe functionality and enhance requirements generation.</li>
+            <li>Documented and approved product or project requirements developed from business strategy, market research, and project charter. </li>
+            <li>Technical requirements to support development.</li>
+            <li>Requirements traceability matrix linking user-stories, development plans, and acceptance criteria.</li>
+            <li>Comprehensive documentation and building lessons learned.</li>
+          </ul>
+      </div>
+    </div>
+
+    <div class="expandable">
+    <h3 class="expandable_header">RFI/RFP Generation and Response Analysis</h3>
+      <div class="expandable_sub">  
+          <h5>Where we can help: Your Challenges</h5>
+          <ul>
+            <li>Process to manage the RFI / RFP cycle is time-consuming and complicated.</li>
+            <li>Requirements to support an RFI / RFP are non-existent or lack adequate detail for vendors to respond.</li>
+            <li>Requirements have multi-level questions that allow for easy vendor acceptance.</li>
+            <li>Excessive vendor communications.</li>
+            <li>Requirements that do not support vendor selection objectives.</li>
+            <li>No formal process exists to identify, qualify, and select vendors.</li>
+          </ul>
+
+          <h5>What you can receive from MI Consultants:  Our Deliverables</h5>
+          <ul>
+            <li>End-to-end RFI / RFP process execution that includes vendor engagement, communications, response formats, templates, rating system, and selection criteria.</li>
+            <li>Analysis of the vendor responses and vendor selection recommendation.</li>
+            <li>Business case and product or service impact analysis.</li>
+          </ul>
+      </div>
+    </div>
             
         </div>
     	</div>
@@ -207,7 +251,7 @@ $(window).load(function() {
 
 <div class="footer">
 	<p>
-	    <span id="left">&copy; 2014 Mobile Impact, LLC. &nbsp All Rights Reserved.</span>
+	    <span id="left">&copy; 2015 Mobile Impact, LLC. &nbsp All Rights Reserved.</span>
 	    <span id="right">
 		<a href="terms.html">Terms of Use</a> &nbsp|&nbsp
 		<a href="terms.html#privacy">Privacy Policy</a> &nbsp|&nbsp

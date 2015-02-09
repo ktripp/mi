@@ -88,7 +88,7 @@
 						'<b>Email:</b> ' . $email . '<br/>' .
 						'<b>Phone:</b> ' . $phone . '<br/>' .
 						'<b>Desired Location: </b>' . $location . '<br/>' .
-						'<b>Willing to Travel: </b>' . $travel . '<br/>' .
+						'<b>Amount of time available to travel: </b>' . $travel . '<br/>' .
 						'<b>Comments: </b>' . $comments . '<br/>' .
 						'<p>See attached resume.</p>' .
 						'</div> </html>';

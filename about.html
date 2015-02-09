@@ -11,6 +11,7 @@ content="Chipsets Mobile Devices Firmware Mobile Applications Client/Server Mobi
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
 
 <script type="text/javascript" src="js/menu.js"></script> 
+<script type="text/javascript" src="js/mi.js" ></script> 
 
 <link rel="stylesheet" href="css/jquery.megamenu.css" type="text/css" media="screen" />
 <script src="js/jquery.megamenu.js" type="text/javascript"></script>
@@ -19,13 +20,6 @@ jQuery(document).ready(function(){
     jQuery(".megamenu").megamenu({ 'justify':'left' });
 }); 
 </script>
-
-
-<!-- RSS Reader -->
-<script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
-<script src="js/jquery.vticker.js" type="text/javascript"></script>
-<link rel="stylesheet" href="css/jquery.zrssfeed.css" type="text/css" media="screen"/>
-<script src="js/mi.js" type="text/javascript"></script>
 
 
 <!-- Fonts -->
@@ -55,14 +49,8 @@ jQuery(document).ready(function(){
 		<div id="left">
 		    <a href="index.html" id="link"><img src="images/milogo_white.png" alt="Mobile Impact"/></a>
 		</div>
-		<div id="right">
-		    <!-- RSS News -->
-		    <div id="news""></div>
-		</div>
-		<div id="right">
-		    <!-- RSS News -->
-		    <div id="news""></div>
-		</div>
+
+
     </div>
     
     <div class="top-menu">
@@ -74,13 +62,11 @@ jQuery(document).ready(function(){
             <div class="menu-list"  id="nav_company">
     
               <ul>
-		  <li><a href="index.html">Home</a></li>
+		              <li><a href="index.html">Home</a></li>
                   <li><a href="about.html">About Us</a>
                   </li>
                   <li><a href="team.html">Executive Team</a>
                   </li>
-		  <li><a href="projects.html">Projects</a>
-		  </li>
                   <li><a href="approach.html">Our Approach</a>
                   </li>
               </ul>
@@ -94,15 +80,15 @@ jQuery(document).ready(function(){
             <a href="services.html" id="nav_services">Services and Solutions</a>
             <div class="menu-list" id="nav_services">
               <ul>
-                <li><a href="research.html">Research and Analysis</a>
+                <li><a href="research.html">Strategy, Research and Analysis</a>
                 </li>
-                <li><a href="requirements.html">Requirements Generation</a>
+                <li><a href="requirements.html">Product Definition and Requirements </a>
+                </li>
+                <li><a href="technology.html">Technology and Engineering</a> 
                 </li>
                 <li><a href="implementation.html">Program Implementation</a>
                 </li>
                 <li><a href="support.html">Operations Support</a>
-                </li>
-                <li><a href="technology.html">Technology and Engineering</a> 
                 </li>
               </ul>
             </div>
@@ -114,12 +100,6 @@ jQuery(document).ready(function(){
             <div class="menu-list">
               <ul>
                 <li><a href="resumes.html">Join Our Team</a>
-                </li>
-                <li><a href="positions.html">Available Positions</a>
-                </li>
-                <!--<li><a href="papers.html">Whitepapers</a>
-                </li>-->
-                <li><a href="links.html">Industry Links</a>
                 </li>
                 <li><a href="contact.html">Contact Us</a>
                 </li>
@@ -140,7 +120,6 @@ jQuery(document).ready(function(){
         	<ul> <a href="company.html"><h3>Company</h3></a>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="team.html">Executive Team</a></li>
-		<li><a href="projects.html">Projects</a></li>
                 <li><a href="approach.html">Our Approach</a></li>
             </ul>
         </div>
@@ -150,39 +129,19 @@ jQuery(document).ready(function(){
 		
         	<div class="subheader" id="company_about"></div>
             
-		    <p>As the wireless industry continues its dramatic change, our clients leverage the experience of the Mobile Impact
-		    team to quickly adapt to those changes. The background of our team is very broad and ranges from semiconductor
-		    development, system engineering, product development, through firmware and
-		    application design, to engineering and operational management, supply chain
-		    management, and marketing. </p>
-		    <br />
-		    
+		    <p>Our tenet is to deploy customized teams with the skills to efficiently solve your problems.  To that end, we utilize seasoned professionals with strong analytical capabilities, superior project leadership abilities, and the know-how to get things done.  We define and document objectives, and execute on project activities. Further, our team members have diverse backgrounds that bring insight from varied industries and functional organizations to create multi-faceted viewpoints. </p>
+
+        <p>Our technology development includes system engineering, product design/development, semiconductor development, application software specification, and system implementation and verification. Our business and operational background includes program/project management, product management, engineering and operational management, supply chain management, and product marketing.  </p>
+
+        <p>It is the quality of our employees that drives our trusted relationships. These teams have proven successful in delivering results beyond the initial expectations of our clients. Our business model enables us to support an individual project or to lead entire cross-functional program from concept through design, installation, verification, and launch. Our nimble organization allows us the flexibility to adapt to changing market needs and project conditions in real-time.</p>
+
 		    <p><b>Our services include:</b>
 			<ul>
-			    <li><a href="research.html">Research and Analysis</a></li>
-			    <li><a href="technology.html">Technology and engineering</a></li>
-			    <li><a href="requirements.html">Requirements Generation</a></li>
-			    <li><a href="implementation.html">Program Implementation</a></li>
-			    <li><a href="support.html">Operations Support </a></li>
-			</ul>
-		    </p>
-		    
-		    <p><b>Highlights of our expertise include:</b>
-			<ul>
-			    <li>Product segmentation, positioning, and evolution </li>
-			    <li>Mobile device integrated circuit design, system design, and integration</li>
-			    <li>Mobile data system design and architecture</li>
-			    <li>Application requirements and system integration</li>
-			    <li>Device test and certification</li>
-			    <li>Requirements and use case generation</li>
-			    <li>Supply chain management</li>
-			    <li>Data security specification</li>
-			    <li>Wireless engineering standards</li>
-			    <li>RFI/RFP generation, management, and scoring</li>
-			    <li>Carrier Forward logistics and operations</li>
-			    <li>Carrier Reverse logistics and service/repair</li>
-			    <li>Supplier management and contracts</li>
-			    <li>Operational and engineering process improvement and redesign</li>
+			    <li><a href="research.html">Strategy, research, and analysis</a></li>
+			    <li><a href="requirements.html">Requirements driven product definition</a></li>
+          <li><a href="technology.html">Technology evaluation, engineering design, product validation</a></li>
+			    <li><a href="implementation.html">Program planning and project execution</a></li>
+			    <li><a href="support.html">Operations process development and management </a></li>
 			</ul>
 		    </p>
 
@@ -199,7 +158,7 @@ jQuery(document).ready(function(){
 
 <div class="footer">
 	<p>
-	    <span id="left">&copy; 2014 Mobile Impact, LLC. &nbsp All Rights Reserved.</span>
+	    <span id="left">&copy; 2015 Mobile Impact, LLC. &nbsp All Rights Reserved.</span>
 	    <span id="right">
 		<a href="terms.html">Terms of Use</a> &nbsp|&nbsp
 		<a href="terms.html#privacy">Privacy Policy</a> &nbsp|&nbsp
