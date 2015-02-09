@@ -1,0 +1,347 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link rel="stylesheet" type="text/css" href="css/mi.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+
+<script type="text/javascript" src="js/menu.js"></script>
+
+<link rel="stylesheet" href="css/jquery.megamenu.css" type="text/css" media="screen" />
+<script src="js/jquery.megamenu.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+    jQuery(".megamenu").megamenu({ 'justify':'left' });
+}); 
+</script>
+
+<script src="js/mi.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+var name = "#float_menu";  
+var menuYloc = null;
+
+$(document).ready(function(){
+    jQuery(".megamenu").megamenu({ 'justify':'left' });
+  
+    menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")));
+});
+
+$(window).scroll(function () {
+    var offset = menuYloc + $(document).scrollTop();
+    if ($(document).scrollTop() > 200) {
+	offset -= 200;
+    }
+    else
+    {
+	offset = 0;
+    }
+    offset = offset+"px";
+    $(name).animate({top:offset},{duration:600,queue:false});
+});
+
+</script>
+
+<!-- RSS Reader -->
+<script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
+<script src="js/jquery.vticker.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/jquery.zrssfeed.css" type="text/css" media="screen"/>
+<script src="js/mi.js" type="text/javascript"></script>
+
+
+<!-- Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Podkova|Jura:400,500&v2' rel='stylesheet' type='text/css'>
+
+
+<title>Mobile Impact - Terms of Use</title>
+
+
+<!-- Google analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24466363-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</head>
+
+
+<body>
+
+<div class="page-wrapper"> 
+    
+    <div class="header">
+		<div id="left">
+		    <a href="index.html" id="link"><img src="images/milogo_white.png" alt="Mobile Impact"/></a>
+		</div>
+		<div id="right">
+		    <!-- RSS News -->
+		    <div id="news""></div>
+		</div>
+		<div id="right">
+		    <!-- RSS News -->
+		    <div id="news""></div>
+		</div>
+    </div>
+    
+    <div class="top-menu">
+    <!--MegaMenu Starts-->
+        <ul class="megamenu">
+       
+           <li>
+            <a href="company.html" id="nav_company">Company</a>
+            <div class="menu-list"  id="nav_company">
+    
+              <ul>
+		  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a>
+                  </li>
+                  <li><a href="team.html">Executive Team</a>
+                  </li>
+		  <li><a href="projects.html">Projects</a>
+		  </li>
+                  <li><a href="approach.html">Our Approach</a>
+                  </li>
+              </ul>
+    
+            </div>
+          </li>
+          
+          
+          
+          <li>
+            <a href="services.html" id="nav_services">Services and Solutions</a>
+            <div class="menu-list" id="nav_services">
+              <ul>
+                <li><a href="research.html">Research and Analysis</a>
+                </li>
+                <li><a href="requirements.html">Requirements Generation</a>
+                </li>
+                <li><a href="implementation.html">Program Implementation</a>
+                </li>
+                <li><a href="support.html">Operations Support</a>
+                </li>
+                <li><a href="technology.html">Technology and Engineering</a> 
+                </li>
+              </ul>
+            </div>
+          </li>
+      
+      
+          <li>
+            <a href="careers.html">Careers and Resources</a>
+            <div class="menu-list">
+              <ul>
+                <li><a href="resumes.html">Join Our Team</a>
+                </li>
+                <li><a href="positions.html">Available Positions</a>
+                </li>
+                <!--<li><a href="papers.html">Whitepapers</a>
+                </li>-->
+                <li><a href="links.html">Industry Links</a>
+                </li>
+                <li><a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+    
+  <div class="content-wrapper">
+    
+	<div id="wrap">
+	    <div id="content-background">
+	    <div id="sidebar">
+			<div id="float_menu">
+			    <ul>
+				<h3 class="label">Mobile Impact, LLC</h3>
+				<li><a href="#terms" onclick="return false;">Terms of Use</a></li>
+				<li><a href="#privacy" onclick="return false;">Privacy Policy</a></li>
+				<li><a href="#eeo" onclick="return false;">EEO Policy Statement</a></li>
+			    </ul>
+			</div>
+	    </div>
+        
+        
+    	<div id="main">
+		
+        	<!--<div class="subheader">
+		    <h2>Terms of Use </h2>
+        	</div>-->
+            
+	    <a id="terms"></a>
+	    <p><h3 style="margin-left:40px"> Terms of Use</h3></p>
+            <p><b>Your access to and use of this site is subject to the following terms and conditions and all applicable laws.</b></p>
+
+	    <p>By accessing and using this site, you accept the following terms and conditions, without limitation or qualification.</p>
+
+	    <p>Unless otherwise stated, the contents of this site including, but not limited to, the text and images contained herein and their arrangement are the property of Mobile Impact, LLC. All trademarks used or referred to in this website are the property of their respective owners.</p>
+   
+	    <p>Nothing contained in this site shall be construed as conferring any license or right to any copyright, patent, trademark or other proprietary interest of Mobile Impact, LLC or any third party. This site and the content provided in this site, including, but not limited to, graphic images, audio, video, html code, buttons, and text, may not be copied, reproduced, republished, uploaded, posted, transmitted, or distributed in any way, without the prior written consent of Mobile Impact, LLC.</p>
+
+	    <p>The information provided on this site is free of charge and for informational purposes only and does not create a business or professional services relationship between you and Mobile Impact, LLC. Links on this site may lead to services or sites not operated by Mobile Impact, LLC. Mobile Impact, LLC takes no responsibility for such other sites or services. A link to another site or service is not an endorsement of that site or service. Any use you make of the information provided on this site, or any site or service linked to by this site, is at your own risk.</p>
+ 
+	    <p>This site and its contents are provided "as is" and Mobile Impact, LLC makes no representation or warranty of any kind with respect to this site or any site or service accessible through this site. In no event will Mobile Impact, LLC be liable to any party for any damages arising out of or in connection with this site, any content on or accessed through this site or any site service linked to, or any copying, displaying, or use thereof.</p>
+
+	    <p>These terms of use and any legal action or proceeding relating to this site shall be governed by the laws of the State of North Carolina. If you attempt to bring any legal proceedings against Mobile Impact, LLC you specifically acknowledge that Mobile Impact, LLC is free to choose the jurisdiction of our preference as to where such action against us may be held. </p>
+
+	    <p>You are responsible for complying with the laws of the jurisdiction from which you are accessing this site and you agree that you will not access or use the information on this site in violation of such laws. </p>
+
+	    <p>Any information submitted by you through this site shall be deemed non-confidential and non-proprietary. You represent that you have the lawful right to submit such information and agree that you will not submit any information unless you are legally entitled to do so. </p>
+
+	    <p>Mobile Impact, LLC does not accept unauthorized idea submissions outside of established business relationships. Mobile Impact, LLC cannot and does not treat any such submissions in confidence. Any ideas disclosed to Mobile Impact, LLC outside a pre-existing and documented confidential business relationship are not confidential and Mobile Impact, LLC may therefore develop, use and freely disclose or publish similar ideas without compensating you or accounting to you.</p>
+
+	<div class="terms_section">
+	    <a id="privacy"></a>
+	    <p><h3>Privacy Policy</h3></p>
+	    
+	    <p><b>Internet privacy policy</b></p>
+	    <p>By submitting data on Mobile Impact, LLC's website, the visitor is providing explicit consent to data collection on the website for the fulfillment of their voluntary requests.</p>
+	    <br />
+
+
+	    <p><b>Data collection</b></p>
+	    <p>We collect only personally identifiable information that is specifically and voluntarily provided by visitors to Mobile Impact, LLC's website. Mobile Impact, LLC receives limited identifiable information, such as name, Title, company address, email address, and telephone and fax numbers, from website visitors. Typically, identifying information is collected to:</p>
+		<ul>
+		    <li>Inquire for further information</li>
+		    <li>Submit resumes</li>
+		</ul>
+
+	    <p>Demographic information, including gender and occupation, is not actively sought, but may be submitted when a visitor responds to an online job application. It is Mobile Impact, LLC's policy to limit the information collected to only the minimum information required to complete a visitor's request. </p>
+
+	    <p>Visitors are also able to send email through the site. Their messages will contain the user's screen name and email address, as well as any additional information the user may wish to include in the message. Because we use the website as a recruiting tool, a visit to the website may also result in the user sending a resume to an individual within Mobile Impact, LLC.</p>
+
+	    <p>Mobile Impact, LLC's intention is not to seek any sensitive information through our website unless legally required for recruiting purposes. If you do wish to provide sensitive information for any reason, Mobile Impact, LLC accepts your explicit consent to use that information in the ways described in this privacy statement.</p>
+	    <br />
+
+
+	    <p><b>Use of data </b></p>
+	    <p>A user may choose to provide personal information in the following examples:</p>
+		<ul>
+		    <li>Submit resumes or work history information</li>
+		    <li>Participate in "join our mailing list" initiatives</li>
+		    <li>Participate in bulletin boards, discussion or message forums</li>
+		    <li>Contact us for further information</li>
+		    <li>Enter Benchmarking Surveys</li>
+		</ul>
+
+	    <p>Information attained by the site is used only for the intended purpose stated at the time that the information is collected. This data is not shared with other entities for secondary or unrelated purposes, or shared with a third party, unless otherwise disclosed at the point of collection. </p>
+
+	    <p>Mobile Impact, LLC makes every practical effort to avoid excessive or irrelevant collection of data. </p>
+
+	    <p>Except where visitors explicitly choose to receive specific Mobile Impact, LLC marketing or other materials, Mobile Impact, LLC will not use personal data collected from our websites to facilitate unsolicited marketing activities.</p>
+	    <br />
+
+
+	    <p><b>Cookies and log files </b></p>
+
+	    <p>Cookies may be used on some pages of our site. "Cookies" are small text files placed on your hard drive that assist us in providing a more customized website experience. It is Mobile Impact, LLC's policy to use cookies to make navigation of our websites easier for visitors and to facilitate efficient registration procedures. Site statistics are compiled by third parties, and therefore your IP address will be passed to third parties for statistical reporting.</p>
+
+	    <p>If you are concerned about cookies, most browsers permit individuals to decline cookies. In most cases, a visitor may refuse a cookie and still fully navigate our website, however other functionality in the site may be impaired. After termination of the visit to our site, you can always delete the cookie from your system.</p>
+
+	    <p>In order to properly manage our website we may anonymously log information on our operational systems, and identify categories of visitors by items such as domains and browser types. These statistics are reported in the aggregate to our webmasters. </p>
+	    <br />
+
+
+	    <p><b>Third parties </b></p>
+
+	    <p>It is Mobile Impact, LLC 's policy only to disclose information to third parties under the following circumstances:</p>
+		<ul>
+		    <li>As required by law through subpoena, search warrant or other legal process</li>
+		    <li>When explicitly requested by a visitor</li>
+		    <li>When required to deliver publications or reference materials requested by a visitor</li>
+		    <li>When required to facilitate conferences or events hosted by a third party</li>
+		</ul>
+	    
+	    <p>Mobile Impact, LLC websites do not collect or compile personally identifying information for dissemination or sale to outside parties for consumer marketing purposes, or host mailings on behalf of third parties.</p>
+	    <br />
+	    
+
+	    <p><b>Third party links</b></p>
+
+	    <p>There are several places throughout www.mobileimpactgroup.com that may link to other websites that do not operate under www.mobileimpactgroup.com 's privacy practices. When you link to other websites, Mobile Impact, LLC's privacy practices no longer apply. </p>
+	    <br />
+
+
+	    <p><b>Data retention </b></p>
+
+	    <p>Contact information about visitors will be kept as long as the information is required to completely service the contact request. Information, discussion posts and email are kept for only the period of time considered reasonable to facilitate the visitor's requests. Resumes are disposed of when they are either no longer under consideration, or are considered dated.</p>
+	    <br />
+	    
+
+	    <p><b>Access</b></p>
+
+	    <p>User updates of information should be handled by going back through the submission process. Mobile Impact, LLC does not assume responsibility for verifying the ongoing accuracy of the content of personal information.</p>
+	    <br />
+
+
+	    <p><b>Security</b></p> 
+	    <p>Mobile Impact, LLC has implemented generally accepted standards of technology and operational security in order to protect personally identifiable information from loss, misuse, alteration or destruction. All Mobile Impact, LLC employees follow a company-wide security policy. Only authorized Mobile Impact, LLC personnel are provided access to personally identifiable information and these employees have agreed to ensure confidentiality of this information.  </p>
+	    <br />
+
+
+	    <p><b>Children </b></p>
+
+	    <p>The Mobile Impact, LLC sites covered by this privacy statement are not intentionally designed for or directed at children 18 years of age or younger. It is Mobile Impact, LLC's policy never to knowingly collect or maintain information about anyone under the age of 13.</p>
+	    <br />
+
+
+	    <p><b>Modifications</b></p>
+
+	    <p>Mobile Impact, LLC reserves the right to modify or amend this Statement at any time. </p>
+	    <br />
+	</div>
+	    
+	
+	
+	<a id="eeo"></a>
+	<div class="terms_section">
+	    <p><h3>EEO Policy Statement</h3></p>
+
+	    <p>Mobile Impact, LLC provides equal employment opportunities (EEO) to all employees
+	    and qualified applicants for employment without regard to race, color, religion, sex,
+	    national origin, age, disability, genetic information, marital status, or veteran
+	    status in accordance with applicable federal, state, and local laws.  This applies to
+	    all terms and conditions of employment, including, but not limited to recruitment,
+	    selection, evaluation, promotion, compensation, training, and termination. </p>
+
+	    <p>Discrimination or harassment based on race, color, religion, sex, national origin,
+	    age, disability, genetic information, marital status, or veteran status is prohibited.</p>
+
+	</div>
+
+        </div>
+    	</div>
+    </div>
+	
+	
+  </div>
+    
+    
+<div class="push"></div>
+</div>
+
+
+<div class="footer">
+	<p>
+	    <span id="left">&copy; 2014 Mobile Impact, LLC. &nbsp All Rights Reserved.</span>
+	    <span id="right">
+		<a href="terms.html">Terms of Use</a> &nbsp|&nbsp
+		<a href="terms.html#privacy">Privacy Policy</a> &nbsp|&nbsp
+		<a href="contact.html">Contact Us</a> &nbsp|&nbsp
+		<a href="http://www.linkedin.com/company/mobile-impact" target="_blank">LinkedIn <img src="images/linkedin.png"/></a>
+	    </span>
+	</p>
+</div>
+
+</body>
+</html>

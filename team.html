@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<meta name="title" content="Mobile Impact - Executive Team"/>
+<meta name="description" content="Mobile Impact Executive Team: Shawn Bayle, Jeff Tripp, Joy Maguire, Mariko Sakai"/>
+<meta name="keywords" content="Shawn D. Bayle Jeff Tripp Joy Maguire Mariko Sakai">
+
+
+<link rel="stylesheet" type="text/css" href="css/mi.css" />
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script> 
+
+<script type="text/javascript" src="js/menu.js"></script> 
+<link rel="stylesheet" href="css/jquery.megamenu.css" type="text/css" media="screen" />
+<script src="js/jquery.megamenu.js" type="text/javascript"></script>
+
+<script src="js/mi.js" type="text/javascript"></script>
+
+
+<script type="text/javascript">
+var name = "#float_menu";  
+var menuYloc = null;
+
+$(document).ready(function(){
+    jQuery(".megamenu").megamenu({ 'justify':'left' });
+  
+    menuYloc = parseInt($(name).css("top").substring(0,$(name).css("top").indexOf("px")));
+});
+
+$(window).scroll(function () {
+    var offset = menuYloc+$(document).scrollTop();
+    if ($(document).scrollTop() > 500) {
+	offset -= 500;
+    }
+    else{
+	offset = 0;
+    }
+
+    offset = offset+"px";
+    $(name).animate({top:offset},{duration:600,queue:false});
+});
+</script>
+
+
+<!-- RSS Reader -->
+<script src="js/jquery.zrssfeed.min.js" type="text/javascript"></script>
+<script src="js/jquery.vticker.js" type="text/javascript"></script>
+<link rel="stylesheet" href="css/jquery.zrssfeed.css" type="text/css" media="screen"/>
+<script src="js/mi.js" type="text/javascript"></script>
+
+
+<!-- Fonts -->
+<link href='http://fonts.googleapis.com/css?family=Podkova|Jura:400,500&v2' rel='stylesheet' type='text/css'>
+
+<title>Mobile Impact - Executive Team</title>
+
+
+<!-- Google analytics -->
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24466363-1']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+
+</head>
+
+
+<body>
+
+<div class="page-wrapper"> 
+    
+    <div class="header">
+		<div id="left">
+		    <a href="index.html" id="link"><img src="images/milogo_white.png" alt="Mobile Impact"/></a>
+		</div>
+		<div id="right">
+		    <!-- RSS News -->
+		    <div id="news""></div>
+		</div>
+		<div id="right">
+		    <!-- RSS News -->
+		    <div id="news""></div>
+		</div>
+    </div>
+    
+    <div class="top-menu">
+    <!--MegaMenu Starts-->
+        <ul class="megamenu">
+       
+           <li>
+            <a href="company.html" id="nav_company">Company</a>
+            <div class="menu-list"  id="nav_company">
+    
+              <ul>
+		  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Us</a>
+                  </li>
+                  <li><a href="team.html">Executive Team</a>
+                  </li>
+		  <li><a href="projects.html">Projects</a>
+		  </li>
+                  <li><a href="approach.html">Our Approach</a>
+                  </li>
+              </ul>
+    
+            </div>
+          </li>
+          
+          
+          
+          <li>
+            <a href="services.html" id="nav_services">Services and Solutions</a>
+            <div class="menu-list" id="nav_services">
+              <ul>
+                <li><a href="research.html">Research and Analysis</a>
+                </li>
+                <li><a href="requirements.html">Requirements Generation</a>
+                </li>
+                <li><a href="implementation.html">Program Implementation</a>
+                </li>
+                <li><a href="support.html">Operations Support</a>
+                </li>
+                <li><a href="technology.html">Technology and Engineering</a> 
+                </li>
+              </ul>
+            </div>
+          </li>
+      
+      
+          <li>
+            <a href="careers.html">Careers and Resources</a>
+            <div class="menu-list">
+              <ul>
+                <li><a href="resumes.html">Join Our Team</a>
+                </li>
+                <li><a href="positions.html">Available Positions</a>
+                </li>
+                <!--<li><a href="papers.html">Whitepapers</a>
+                </li>-->
+                <li><a href="links.html">Industry Links</a>
+                </li>
+                <li><a href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          
+      </ul>
+    </div>
+    
+  <div class="content-wrapper">
+	
+    
+    
+	<div id="wrap">
+		<div id="content-background">
+    	<div id="sidebar">
+            <p> Our mission is to provide world-class, strategic, technical, and business consulting solutions. </p>
+        	<ul> <a href="company.html"><h3>Company</h3></a>
+		    <li><a href="about.html">About Us</a></li>
+		    <li><a href="team.html">Executive Team</a></li>
+		    <li><a href="projects.html">Projects</a></li>
+		    <li><a href="approach.html">Our Approach</a></li>
+		</ul>
+		
+	    <div id="float_menu">
+		<ul>
+		    <a href="#team" onclick="return false;"><h3 class="label">The Executive Team</h3></a>
+			<li><a href="#bio1" onclick="return false;">Shawn Bayle</a></li>
+			<li><a href="#bio2" onclick="return false;">Jeff Tripp</a></li>
+			<li><a href="#bio3" onclick="return false;">Joy Maguire</a></li>
+			<li><a href="#bio4" onclick="return false;">Richard "Skip" Bryan</a></li>
+			<li><a href="#bio5" onclick="return false;">Mariko Sakai</a></li>
+		</ul>
+	    </div>
+	    
+        </div>
+        
+        
+    	<a id="team"></a>
+	<div id="main">
+	    
+            <div class="subheader" id="company_team"></div>
+	    
+	    <p>The Mobile Impact team is truly unique in our ability to rapidly deliver a wide range of
+	    projects in marketing, engineering, procurement, or operations.   We believe that the
+	    collective knowledge and combined experience of our team delivers greater value than
+	    traditional contracting approaches. </p>
+	    
+	    <p>Our team is ready to provide high impact, real-world results with a dedication
+	    to quality and a focus on delivery. Our mission is to provide high quality, strategic,
+	    technical, and business consulting solutions by means of sharing and applying our
+	    knowledge and experience from the wireless ecosystem.   </p>
+            
+	    <a id="bio1"></a>
+	    <div class="bio">
+		<img src="images/shawn.png"/>
+		<h3>Shawn D. Bayle </h3>
+		<h5>Partner and President</h5>
+		
+    		<p>Shawn has over 20 years of experience in the mobile device market with a diverse background in handset business
+		management and application deployment. Shawn has led commercial development, sales, product management, and marketing
+		of many new product lines across the wireless ecosystem.  Shawn founded Mobile Impact in early 2007 to serve wireless
+		clients in recognition of the rapidly growing but fluid mobile data market. </p>
+
+		<p>Previously, Shawn was VP of Business Development at TeleworX, Inc. where he built a mobile data practice and grew
+		the existing transport engineering services business. Previously, Shawn worked at Ericsson, Inc. in a variety of
+		management roles including: Core Technology, Handset Product Management, Handset and Accessory Sales Management,
+		and Network Applications Systems Sales. Shawn's responsibilities grew from Product Manager up to Vice President.
+		During his tenure, he managed the overhaul of the AMPS handset product line, launched a line of CDMA handsets, and
+		landed multiple contracts valued at over $100 Million. His product responsibility included handsets, accessories,
+		Intellectual Property licensing, and mobile data infrastructure and systems. Shawn managed sales teams and major
+		account relationships for Tier 1 mobile operators, national retailers, and chipset vendors.</p>
+
+		<p>Additionally, Shawn worked in mobile chipset marketing for AT&T Microelectronics and embedded processor
+		applications engineering for NEC Electronics. Shawn led the commercial development and launch of numerous chipsets
+		in the cellular, voice processing, and embedded control markets.</p>
+		
+		<p>Shawn holds a MS Computer Engineering degree from Boston University, a BS EE with a concentration in Computer Science
+		from Lafayette College, and numerous MBA courses in Leadership, Business Management, and Product Marketing. Shawn authored
+		US and international patents.</p>
+
+	    </div>
+
+
+	    <a id="bio2"></a>
+	    <div class="bio">
+		<img src="images/jeff.png"/>
+		<h3>Jeff Tripp</h3>
+		<h5>Partner and Principal</h5>
+		<p>email: jtripp@mobileimpactgroup.com</p>
+		<br />
+		
+		<p>Jeff has over 20 years experience in the wireless industry, possessing a broad background in product/project
+		management, systems engineering, IC development, product integration and realization.  He has assembled, managed
+		and led multi-disciplinary teams focused on mobile wireless product realization and product introduction.</p>
+
+		<p>Jeff has a BS in Computer Engineering from University of Illinois and an MBA from the DePaul University. He
+		has provided hands-on consulting to wireless operators and been involved on a variety of technical and business
+		consulting projects that includes product/service requirements and use case generation, supply chain management (vendor
+		management, device procurement, sales and operations planning tools, RFI/RFP), handset sourcing and product cost
+		analysis/break-downs, near field communications (NFC, RFID), and portable data applications (Java, Web-browser, user
+		interface), application integration, and content distribution. </p>
+
+		<p>Jeff has served as the Vice President of Mobile Strategy and Technology at Teleworx, Inc providing consulting
+		services, and previously, worked at Tyco as Director of Business Development, where he established an IC design center
+		focused on new wireless devices and architectures.  At Tyco, he assembled engineering and business teams, directed
+		product requirements, market analysis, and customer contact, as well as assisted engineering with project management
+		and development.  Prior to that Jeff was both a Director of Product Management and Director of Engineering at Motorola.
+		Jeff has developed mobile devices from concept through market deployment, from development of technical/system
+		requirements through implementation of both integrated circuits and integration of mobile devices.  He has managed
+		new product introduction teams, handset/IC development teams, and has a deep understanding of mobile wireless products,
+		features and marketplace.</p>
+
+		<p>He holds 4 patents and has filed for several others.</p>
+	    </div>
+
+	    <a id="bio3"></a>
+	    <div class="bio">
+		
+		<h3>Joy Maguire</h3>
+		<h5>Principal</h5>
+		
+		<p>Joy brings over 20 years of expertise in wireless & wireline telecommunications services: cellular handset and
+		systems, WLAN, personal area, optical and intelligent networks, wireless Internet devices, applications, technologies
+		and standards. As high-tech industry veteran, Joy has held executive roles in Product and Business Management, has
+		maintained a deep presence in Industry Standards groups, and has consulted with industry leaders since 2003.</p>
+
+		<p>Previously, she was Vice President of Marketing at C Speed Corporation, a developer of MEMS-based optical switching
+		subsystems. Prior to C Speed, she served as Vice President of Global Wireless and Mobility Solutions for Razorfish and
+		has previously been Sr. Director of Product Management, Marketing and Business Development for Mitsubishi Wireless
+		Communications, Inc. where she developed and launched the world's first commercial Smartphones (1st & 2nd generation
+		Internet-ready MobileAccess&trade; phones) and developed partnerships with carriers, infrastructure vendors, software developers,
+		system integrators and value added resellers. Before joining Mitsubishi Electronics, Joy held product management, market
+		management and business development positions at Centigram Communications Corporation and AT&T. At Centigram, she developed
+		and delivered an Enhanced Services consulting program for carriers and network operators.</p>
+
+		<p>Joy is a current member of the WCA RFID SIG, the WIC Enterprise, and M2M Committees and chaired the CTIA Enterprise
+		Action Team sub-committee on Standards and Industry Groups in 2002/3. In 1999-01, Joy founded and chaired the WAP Forum
+		Specification Requirements Committee (SRC), which developed and prioritized market requirements for next generation
+		specifications. She served from 1998-2001 on the Wireless Data Forum's Board and chaired the ISDN User Forum Messaging
+		and Answering Team from 1993-96. In March 2000, Wireless Week recognized Ms. Maguire as one of the most influential women
+		in wireless.</p>
+
+	    </div>
+
+	    <a id="bio4"></a>
+	    <div class="bio">
+
+		<h3>Richard "Skip" Bryan</h3>
+		<h5>Principal</h5>
+		
+		<p>Skip is a seasoned consultant and technologist with over 25 years experience in terrestrial and
+		satellite wireless communications, business management, and engineering covering GSM-TDMA,
+		microwave communications, 802.xx, Bluetooth, wireless services, and mobile Internet solutions.
+		He has developed device and service specifications including functional requirements for device
+		testing, device middleware and application environments, mobile browsing, and has developed,
+		executed, and evaluated RFPs and vendor bake-offs for mobile device applications and operator
+		data services.</p>
+		
+		<p>Prior to consulting, Skip spent 9 years at Ericsson in a variety of management roles in both
+		the mobile phone and systems divisions, starting as an engineering manager for Ericsson's handset
+		team, designing the world's smallest dual mode digital handset. Subsequently he became Director
+		of Product Management for data accessories where he served as a founder of and Director on the WAP
+		Forum Board. He authored the wireless data strategic plan for client-server data wireless systems
+		and was responsible for mobile ecosystem roadmaps to address the emerging smart phone and
+		applications market. Later, he served both as Director of Data Technology Marketing and Americas'
+		Area Manager for Technology Licensing. Moving to the Ericsson Systems division, he provided
+		strategic planning for data applications services guiding strategy development leading to: the
+		deployment of ADA-compliant mobile phones, Smart Phone functional requirements, virtual wireless
+		network operations models, and operator wireless applications including ring tones, music sales,
+		and mobile positioning services. </p>
+		
+		<p>Prior to Ericsson, Mr. Bryan was Engineering Vice President at ST Systron Donner Corporation
+		holding responsibility for microwave communications components, subsystems, and instrumentation
+		for military communications and electronic warfare products. Previously he worked at Hughes
+		Aircraft Company where he held a number of engineering roles responsible for wireless and
+		communication systems including design of microwave communication satellite receivers, frequency
+		synthesizer subsystems, and transmitter circuits. His responsibility included design, production
+		development, and test and verification. Skip holds both BS and MS degrees in Electrical
+		Engineering and has served on several industry standards groups including: the IEEE Microwave
+		Theory and Techniques Society (President in 1997), the Bluetooth Special Interest Group,
+		and the WAP Forum.</p>
+
+	    </div>
+	    
+	    
+	    <a id="bio5"></a>
+	    <div class="bio">
+		<img src="images/mariko.png"/>
+		<h3>Mariko Sakai</h3>
+		<h5>Director</h5>
+		
+		<p>Mariko is a telecom professional with over 18 years of experience focused in the
+		areas of carrier operations, product development, supply chain management, and
+		project management.  Mariko is particularly skilled at driving solutions across
+		a wide array of business areas including operations, pricing, finance, IT, supply
+		chain management, engineering, and product management. </p>
+
+		<p>Mariko has provided consulting services for the past 7 years. Most recently,
+		she has worked on projects to improve carrier device certification performance,
+		to define requirements to deploy a Sales & Operations Planning tool and processes,
+		to develop large scale handset purchase contracts, to document and improve service
+		and repair processes, and to break down and analyze product costs. She has drafted
+		and negotiated multiple contracts to purchase wireless products and services,
+		helping clients achieve significant cost savings.   Previously, Mariko was a
+		Product Manager at Cable and Wireless USA where she was responsible for all
+		aspects of product development and management, from generating product
+		requirements, order to bill processes, to marketing collateral, for voice
+		and data products. Before this, she worked at Iridium both as a Pricing Manager
+		and Product Manager, defining and implemented pricing, rating, and billing
+		requirements as well as voice service enhancements.   </p>
+
+		<p>Mariko has a global experience base working with clients and customers in
+		over 20 countries. She is fluent in English and Japanese, and is proficient in
+		Spanish. She holds a Masters in International Economics, with concentration in
+		Energy, Environment, Science and Technology from the Johns Hopkins University
+		School of Advanced International Studies, and a BA in Business from Keio University
+		in Tokyo, Japan.</p>
+
+	    </div>
+	    
+
+        </div>
+    	</div>
+    </div>
+	
+  </div>
+    
+    
+<div class="push"></div>
+</div>
+
+
+<div class="footer">
+	<p>
+	    <span id="left">&copy; 2014 Mobile Impact, LLC. &nbsp All Rights Reserved.</span>
+	    <span id="right">
+		<a href="terms.html">Terms of Use</a> &nbsp|&nbsp
+		<a href="terms.html#privacy">Privacy Policy</a> &nbsp|&nbsp
+		<a href="contact.html">Contact Us</a> &nbsp|&nbsp
+		<a href="http://www.linkedin.com/company/mobile-impact" target="_blank">LinkedIn <img src="images/linkedin.png"/></a>
+	    </span>
+	</p>
+</div>
+
+</body>
+</html>
